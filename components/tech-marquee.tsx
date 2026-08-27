@@ -14,6 +14,7 @@ const technologies: Logo[] = [
   { name: "n8n",          alt: "n8n",          src: "https://svgl.app/library/n8n.svg" },
   { name: "Make",         alt: "Make",          src: "https://cdn.simpleicons.org/make" },
   { name: "Zapier",       alt: "Zapier",        src: "https://cdn.simpleicons.org/zapier" },
+  { name: "Power Automate", alt: "Power Automate", src: "https://www.google.com/s2/favicons?domain=powerautomate.microsoft.com&sz=128" },
   { name: "TypeBot",      alt: "TypeBot",       src: "https://www.google.com/s2/favicons?domain=typebot.io&sz=128" },
   { name: "ManyChat",     alt: "ManyChat",      src: "https://www.google.com/s2/favicons?domain=manychat.com&sz=128" },
   { name: "Kommo CRM",    alt: "Kommo CRM",     src: "https://www.google.com/s2/favicons?domain=kommo.com&sz=128" },
@@ -79,7 +80,16 @@ export function TechMarquee() {
   const repeated = [...technologies, ...technologies, ...technologies, ...technologies];
   return (
     <div className="py-12 bg-slate-50 border-y border-slate-200 overflow-hidden relative flex flex-col items-center mt-12">
-      <p className="text-slate-500 text-xs tracking-widest uppercase mb-6 font-medium">Integrações & Tecnologias</p>
+      <div className="text-center px-4 mb-6">
+        <p className="text-slate-500 text-xs tracking-widest uppercase font-medium">Integrações & Tecnologias</p>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mt-3">
+          Ferramentas que conecto para transformar operação em fluxo
+        </h2>
+        <p className="text-slate-600 max-w-2xl mx-auto mt-3 text-sm md:text-base">
+          Atuo com ferramentas de automação, CRM, atendimento, dados e IA para construir fluxos integrados entre
+          marketing, vendas, pós-venda e gestão operacional.
+        </p>
+      </div>
 
       <div className="absolute inset-y-0 left-0 w-16 md:w-1/4 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none" />
       <div className="absolute inset-y-0 right-0 w-16 md:w-1/4 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none" />

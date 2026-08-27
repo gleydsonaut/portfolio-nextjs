@@ -78,7 +78,7 @@ export function Preloader() {
         {/* Footer */}
         <div className="flex items-center justify-between">
           <span className="text-xs text-gray-400">
-            Gleydson Rodrigues · Gestor de Automação & IA
+            Gleydson Rodrigues · Automação, CRM e IA Aplicada
           </span>
           <span className="text-xs font-semibold text-gray-600">{progress}% concluído</span>
         </div>

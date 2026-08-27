@@ -23,16 +23,16 @@ export default function Home() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-sm font-medium mb-6">
               <span className="w-2 h-2 rounded-full bg-indigo-600 animate-pulse" />
-              Gestor de Automação & IA
+              Analista de Automação, CRM e IA Aplicada
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance leading-tight text-slate-900 tracking-tight">
-              Transforme seu negócio com
-              <span className="block text-[#4f46e5] mt-2">Inteligência Artificial</span>
+              Automação, CRM e IA aplicada para
+              <span className="block text-[#4f46e5] mt-2">operações comerciais</span>
             </h1>
             <p className="text-slate-600 mb-8 text-lg text-pretty leading-relaxed max-w-xl">
-              Sou o Gleydson. Desenho e coloco em produção fluxos de automação em n8n, integrações via APIs REST e
-              agentes de IA que assumem o trabalho repetitivo, aceleram a resposta ao cliente e destravam crescimento
-              sem inflar a equipe.
+              Sou Gleydson Rodrigues. Estruturo automações, integrações e agentes de IA para conectar CRM, WhatsApp,
+              dados e operação comercial. Trabalho com n8n, APIs REST, webhooks, Kommo CRM e LLMs para reduzir tarefas
+              manuais, melhorar resposta ao lead e dar mais rastreabilidade ao funil de vendas.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -40,7 +40,7 @@ export default function Home() {
                 size="lg"
                 className="bg-[#4f46e5] text-white hover:bg-[#4338ca] hover:shadow-lg hover:shadow-indigo-500/25 rounded-full px-8 transition-all duration-300"
               >
-                <Link href="#contact">Entrar em Contato</Link>
+                <Link href="#works">Ver projetos</Link>
               </Button>
               <Button
                 asChild
@@ -49,8 +49,16 @@ export default function Home() {
                 className="border-slate-200 text-slate-700 bg-white hover:bg-slate-50 hover:text-slate-900 rounded-full px-8 shadow-sm transition-all"
               >
                 <a href="/Gleydson_Rodrigues_Curriculo.pdf" download="Gleydson_Rodrigues_Curriculo.pdf">
-                  <Download size={18} className="mr-2" /> Baixar CV
+                  <Download size={18} className="mr-2" /> Baixar currículo
                 </a>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="ghost"
+                className="text-slate-700 hover:text-slate-900 hover:bg-white rounded-full px-8 transition-all"
+              >
+                <Link href="#contact">Fale comigo</Link>
               </Button>
             </div>
           </div>
@@ -85,8 +93,9 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4 tracking-tight text-slate-900">Vamos Conversar?</h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-pretty text-lg">
-                Se você precisa de uma integração complexa ou quer colocar agentes de IA para escalar seu atendimento,
-                me mande uma mensagem. Eu respondo rápido.
+                Se você busca um profissional para estruturar automações, CRM, integrações e IA aplicada à operação
+                comercial, vamos conversar. Posso ajudar a transformar gargalos do funil em fluxos mais simples,
+                rastreáveis e escaláveis.
               </p>
             </div>
 
@@ -110,7 +119,7 @@ export default function Home() {
               <ul className="space-y-4 text-slate-600">
                 <li>
                   <Link href="#services" className="hover:text-[#4f46e5] transition-colors font-medium">
-                    Serviços
+                    Atuação
                   </Link>
                 </li>
                 <li>

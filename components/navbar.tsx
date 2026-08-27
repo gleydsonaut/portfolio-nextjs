@@ -22,7 +22,7 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="#services" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
-              Serviços
+              Atuação
             </Link>
             <Link href="#works" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
               Projetos
@@ -32,7 +32,7 @@ export function Navbar() {
             </Link>
             <div className="flex items-center gap-4 ml-4">
               <Button asChild className="rounded-full bg-[#4f46e5] text-white hover:bg-[#4338ca] shadow-sm">
-                <Link href="#contact">Fale Comigo</Link>
+                <Link href="#contact">Fale comigo</Link>
               </Button>
             </div>
           </div>
@@ -53,7 +53,7 @@ export function Navbar() {
               className="text-slate-600 hover:text-indigo-600 font-medium py-2 transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              Serviços
+              Atuação
             </Link>
             <Link
               href="#works"
@@ -72,7 +72,7 @@ export function Navbar() {
             <div className="pt-2">
               <Button asChild className="w-full rounded-full bg-[#4f46e5] hover:bg-[#4338ca] text-white shadow-sm">
                 <Link href="#contact" onClick={() => setIsOpen(false)}>
-                  Fale Comigo
+                  Fale comigo
                 </Link>
               </Button>
             </div>

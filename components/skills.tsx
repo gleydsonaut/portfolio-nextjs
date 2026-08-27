@@ -48,15 +48,16 @@ export function Skills() {
   }, [])
 
   const skills = [
-    { name: "n8n & Automação de Processos", percentage: 98 },
-    { name: "APIs REST, Webhooks & OAuth", percentage: 95 },
-    { name: "LLMs, RAG & Agentes Autônomos", percentage: 90 },
-    { name: "Kommo CRM & Integrações de Vendas", percentage: 92 },
-    { name: "WhatsApp API & Chatbots (TypeBot/ManyChat)", percentage: 88 },
-    { name: "JavaScript (Node.js) & Lógica de Programação", percentage: 85 },
-    { name: "Infraestrutura (Linux, VPS, Docker, Cloudflare)", percentage: 80 },
-    { name: "Python & Scripts (Claude/Codex)", percentage: 75 },
-    { name: "Prompt Engineering Especializado (SEO/Marketing)", percentage: 90 },
+    { name: "n8n e automação de processos comerciais", percentage: 98 },
+    { name: "APIs REST, webhooks e OAuth", percentage: 95 },
+    { name: "CRM, funil, lead scoring e RevOps", percentage: 94 },
+    { name: "WhatsApp Business API e chatbots", percentage: 90 },
+    { name: "LLMs, agentes de IA e prompt engineering", percentage: 90 },
+    { name: "Kommo CRM, RD Station e integrações de vendas", percentage: 92 },
+    { name: "Power Automate, Make e Zapier", percentage: 88 },
+    { name: "Google Sheets, dashboards e dados operacionais", percentage: 86 },
+    { name: "JavaScript, Python e scripts de automação", percentage: 85 },
+    { name: "Linux, VPS, Docker, Cloudflare e GitHub", percentage: 80 },
   ]
 
   return (
@@ -64,8 +65,8 @@ export function Skills() {
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4 tracking-tight text-slate-900">Minhas Habilidades</h2>
         <p className="text-slate-600 max-w-2xl mx-auto text-pretty text-lg">
-          Especialista em automação de processos, integração de sistemas e implementação de agentes inteligentes. Veja
-          meus principais domínios técnicos e níveis de proficiência.
+          Principais competências técnicas e operacionais aplicadas a automação, CRM, RevOps, integrações e IA aplicada
+          a negócios.
         </p>
       </div>
       <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

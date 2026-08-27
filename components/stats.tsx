@@ -68,10 +68,10 @@ export function Stats() {
 
   return (
     <div ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
-      <StatItem value={2} suffix="+" label="Anos de Experiência" start={start} />
-      <StatItem value={20} suffix="+" label="Integrações via API Entregues" start={start} />
-      <StatItem value={15} suffix="h" prefix="+" label="Horas Economizadas / Semana" start={start} />
-      <StatItem value={100} suffix="%" label="Jornada do Cliente Automatizada" start={start} />
+      <StatItem value={2} suffix="+" label="Anos de experiência em automação e operações digitais" start={start} />
+      <StatItem value={20} suffix="+" label="Integrações via API e webhooks" start={start} />
+      <StatItem value={15} suffix="h" prefix="+" label="Economizadas por semana em rotinas manuais" start={start} />
+      <StatItem value={30} suffix="%" prefix="+" label="Leads qualificados em projeto com agente de IA" start={start} />
     </div>
   )
 }

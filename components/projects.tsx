@@ -44,46 +44,46 @@ function ProjectCard({ title, description, image, technologies }: ProjectProps) 
 export function Projects() {
   const projects: ProjectProps[] = [
     {
-      title: "Datar Etapas do Lead na Kommo",
+      title: "Lead Scoring e Distribuição no Kommo CRM",
       description:
-        "Recebe um webhook quando a etapa de um lead é alterada no Kommo CRM, calcula datas e prazos de forma automática e atualiza as informações do lead no sistema.",
+        "Sistema de pontuação para classificar leads por comportamento, intenção de compra e maturidade, direcionando contatos para o pipeline correto e apoiando a priorização do time comercial.",
       image: "/workflows/image1.png",
       technologies: ["n8n", "Webhooks", "JavaScript", "Kommo CRM", "HTTP Requests"],
     },
     {
-      title: "LinkedIn Post Automático",
+      title: "Agente de IA para Qualificação via WhatsApp",
       description:
-        "Acionado diariamente para ler um feed RSS de notícias. Usa a IA do Google Gemini para gerar um post atrativo e publica sozinho no LinkedIn.",
+        "Fluxo com IA para atendimento inicial, coleta de informações, identificação de dor, qualificação do lead e encaminhamento para o time comercial com contexto organizado.",
       image: "/workflows/image2.png",
-      technologies: ["n8n", "Schedule", "RSS Feed", "LangChain", "Google Gemini", "API LinkedIn"],
+      technologies: ["WhatsApp Business API", "n8n", "LLMs", "APIs REST", "CRM"],
     },
     {
-      title: "Integração Hotmart (Eventos)",
+      title: "Onboarding e Pós-compra Automatizados",
       description:
-        "Captura eventos em tempo real da Hotmart de aprovação de compras ou cancelamentos, separa a lógica por tipo de evento e dispara atualizações para os sistemas internos.",
+        "Automação para acionar mensagens, liberar acessos, atualizar CRM e acompanhar a jornada após a compra, reduzindo falhas manuais e melhorando experiência do cliente.",
       image: "/workflows/image3.png",
-      technologies: ["n8n", "Webhooks Hotmart", "JavaScript", "Switch/If", "HTTP Requests"],
+      technologies: ["n8n", "WhatsApp Business API", "Kommo CRM", "Hotmart", "Curseduca"],
     },
     {
       title: "Sincronização de Alunos (EAD p/ CRM)",
       description:
-        "Roda de forma autônoma a cada 8 horas para buscar informações em massa na Curseduca, processa os dados em lotes e sincroniza as atualizações no funil correto do Kommo CRM.",
+        "Rotina automatizada para buscar dados em lotes, atualizar status, sincronizar informações e manter a jornada do aluno refletida no CRM.",
       image: "/workflows/image4.png",
-      technologies: ["n8n", "Cron", "Batches", "Curseduca", "JavaScript", "HTTP Requests"],
+      technologies: ["n8n", "Cron", "Batches", "Curseduca", "Kommo CRM", "JavaScript"],
     },
     {
       title: "Recuperação de Carrinho Abandonado",
       description:
-        "Recebe o alerta de carrinho abandonado, aguarda um tempo pré-determinado, revalida as condições e dispara processos de recuperação de venda caso o cliente ainda não tenha comprado.",
+        "Fluxo que recebe eventos de abandono, aguarda o momento correto, valida se a compra foi concluída e aciona uma régua de recuperação personalizada.",
       image: "/workflows/image5.png",
       technologies: ["n8n", "Webhooks", "Wait Node", "JavaScript", "HTTP Requests"],
     },
     {
-      title: "Automação de Renovação de Planos",
+      title: "Dashboard Operacional de Funil e Automações",
       description:
-        "Roda automaticamente validando e consultando dados de renovação no Google Sheets, junta essas informações com outros sistemas e aciona os procedimentos de renovação e lembrete.",
+        "Mapeamento de indicadores para acompanhar origem dos leads, etapas do funil, SLA, status de automações e gargalos entre marketing, vendas e pós-venda.",
       image: "/workflows/image6.png",
-      technologies: ["n8n", "Schedule", "Google Sheets", "Merge", "JavaScript", "HTTP Requests"],
+      technologies: ["CRM", "Google Sheets", "APIs", "n8n", "Dashboards operacionais"],
     },
   ]
 
@@ -92,8 +92,9 @@ export function Projects() {
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4 tracking-tight text-slate-900">Projetos em Destaque</h2>
         <p className="text-slate-600 max-w-2xl mx-auto text-pretty text-lg">
-          Alguns dos fluxos e automações que desenvolvi em produção com n8n. Cada projeto demonstra integrações reais
-          entre CRMs, plataformas de venda, IA e WhatsApp API.
+          Projetos reais de automação aplicados a CRM, funil comercial, plataformas digitais, WhatsApp Business API e
+          operações de venda. Cada fluxo foi pensado para reduzir trabalho manual, melhorar tempo de resposta e dar
+          mais visibilidade à jornada do lead.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
