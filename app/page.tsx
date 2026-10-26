@@ -5,7 +5,6 @@ import { Services } from "@/components/services"
 import { Projects } from "@/components/projects"
 import { Skills } from "@/components/skills"
 import { ContactForm } from "@/components/contact-form"
-import { MeshBackground } from "@/components/mesh-background"
 import Image from "next/image"
 import Link from "next/link"
 import { Navbar } from "@/components/navbar"
@@ -16,68 +15,62 @@ export default function Home() {
     <main className="min-h-screen bg-white text-slate-900 font-sans">
       <Navbar />
       {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-[90vh] flex flex-col justify-center">
-        <MeshBackground color="#4f46e5" speed={0.5} scale={1.2} opacity={0.15} mouseInteractive={true} />
-        <div className="container mx-auto px-4 pt-28 pb-16 md:pt-32 md:pb-20 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-sm font-medium mb-6">
-              <span className="w-2 h-2 rounded-full bg-indigo-600 animate-pulse" />
-              Analista de Automação, CRM e IA Aplicada
+      <section className="portfolio-hero relative isolate overflow-hidden min-h-[640px] flex flex-col justify-end">
+        <div aria-hidden="true" className="portfolio-hero__shapes">
+          <span className="portfolio-shape portfolio-shape--lavender portfolio-shape--one" />
+          <span className="portfolio-shape portfolio-shape--purple portfolio-shape--two" />
+          <span className="portfolio-shape portfolio-shape--purple portfolio-shape--three" />
+          <span className="portfolio-shape portfolio-shape--lavender portfolio-shape--four" />
+          <span className="portfolio-shape portfolio-shape--deep portfolio-shape--five" />
+          <span className="portfolio-shape portfolio-shape--deep portfolio-shape--six" />
+        </div>
+        <div className="container mx-auto px-5 pt-28 pb-8 md:pt-32 md:pb-0 relative z-10">
+          <div className="portfolio-hero__grid">
+            <div className="portfolio-hero__intro">
+              <p className="portfolio-hero__eyebrow">Gleydson Rodrigues · Analista Pleno de Automação e IA</p>
+              <h1 className="portfolio-hero__title">
+                Automação, CRM e IA aplicada para <span>operações comerciais</span>
+              </h1>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance leading-tight text-slate-900 tracking-tight">
-              Automação, CRM e IA aplicada para
-              <span className="block text-[#4f46e5] mt-2">operações comerciais</span>
-            </h1>
-            <p className="text-slate-600 mb-8 text-lg text-pretty leading-relaxed max-w-xl">
-              Sou Gleydson Rodrigues. Estruturo automações, integrações e agentes de IA para conectar CRM, WhatsApp,
-              dados e operação comercial. Trabalho com n8n, APIs REST, webhooks, Kommo CRM e LLMs para reduzir tarefas
-              manuais, melhorar resposta ao lead e dar mais rastreabilidade ao funil de vendas.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button
-                asChild
-                size="lg"
-                className="bg-[#4f46e5] text-white hover:bg-[#4338ca] hover:shadow-lg hover:shadow-indigo-500/25 rounded-full px-8 transition-all duration-300"
-              >
-                <Link href="#works">Ver projetos</Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-slate-200 text-slate-700 bg-white hover:bg-slate-50 hover:text-slate-900 rounded-full px-8 shadow-sm transition-all"
-              >
-                <a href="/Gleydson_Rodrigues_Curriculo.pdf" download="Gleydson_Rodrigues_Curriculo.pdf">
-                  <Download size={18} className="mr-2" /> Baixar currículo
-                </a>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="ghost"
-                className="text-slate-700 hover:text-slate-900 hover:bg-white rounded-full px-8 transition-all"
-              >
-                <Link href="#contact">Fale comigo</Link>
-              </Button>
-            </div>
-          </div>
-          <div className="relative">
-            <div className="relative aspect-square max-w-[400px] mx-auto">
+
+            <div className="portfolio-hero__portrait">
               <Image
-                src="/gleydson-perfil.png"
+                src="/gleydson-portrait-cutout.png"
                 alt="Gleydson Rodrigues"
                 fill
-                className="rounded-2xl object-cover"
+                sizes="(max-width: 767px) 260px, (max-width: 1100px) 330px, 440px"
+                className="object-contain object-bottom"
                 priority
               />
             </div>
+
+            <div className="portfolio-hero__details">
+              <p className="portfolio-hero__description">
+                Sou Gleydson Rodrigues. Estruturo automações, integrações e agentes de IA para conectar CRM, WhatsApp,
+                dados e operação comercial. Trabalho com n8n, APIs REST, webhooks, HubSpot, Pipefy, Pipedrive, Kommo e
+                LLMs para reduzir tarefas manuais, melhorar a resposta ao lead e dar mais rastreabilidade ao funil de vendas.
+              </p>
+              <div className="portfolio-hero__actions">
+                <Button asChild size="lg" className="bg-[#4f46e5] text-white hover:bg-[#4338ca] rounded-full px-7 transition-all">
+                  <Link href="#works">Ver projetos</Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-slate-300 text-slate-700 bg-white hover:bg-slate-50 rounded-full px-7">
+                  <a href="/Gleydson_Rodrigues_Curriculo.pdf" download="Gleydson_Rodrigues_Curriculo.pdf">
+                    <Download size={18} className="mr-2" /> Baixar currículo
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="ghost" className="text-slate-700 hover:text-slate-900 hover:bg-white rounded-full px-6">
+                  <a href="https://linkedin.com/in/gleydsonrodrigues-aut" target="_blank" rel="noopener noreferrer">
+                    <Linkedin size={18} className="mr-2" /> LinkedIn
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
-
-        <Stats />
-        </div>
       </section>
+
+      <Stats />
 
       <TechMarquee />
 
@@ -93,9 +86,8 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4 tracking-tight text-slate-900">Vamos Conversar?</h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-pretty text-lg">
-                Se você busca um profissional para estruturar automações, CRM, integrações e IA aplicada à operação
-                comercial, vamos conversar. Posso ajudar a transformar gargalos do funil em fluxos mais simples,
-                rastreáveis e escaláveis.
+                Se sua operação precisa integrar atendimento, CRM e automação, vamos conversar. Posso ajudar a mapear
+                processos, qualificar leads e automatizar etapas da jornada, com acompanhamento e melhoria contínua.
               </p>
             </div>
 

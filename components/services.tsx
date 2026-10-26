@@ -8,41 +8,40 @@ export function Services() {
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4 tracking-tight text-slate-900">O Que Eu Faço</h2>
         <p className="text-slate-600 font-medium max-w-2xl mx-auto text-pretty text-lg">
-          Atuo na ponte entre negócio, tecnologia e operação, desenhando fluxos que conectam CRM, atendimento,
-          marketing, vendas e dados. Meu foco é transformar gargalos comerciais em automações rastreáveis, escaláveis e
-          úteis para decisão.
+          Mapeio processos e construo automações que conectam atendimento, CRM e jornada do lead. O foco é reduzir
+          tarefas manuais, qualificar contatos e acompanhar a operação para aprimorar os fluxos continuamente.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <AnimatedGlowCard
           icon={<Workflow size={24} />}
           title="Automação de Processos Comerciais"
-          description="Criação de fluxos em n8n, Make, Zapier e Power Automate para reduzir tarefas repetitivas, padronizar rotinas e aumentar a eficiência da operação."
+          description="Mapeamento de rotinas e criação de fluxos no n8n para automatizar tarefas, padronizar etapas e melhorar a eficiência operacional."
         />
         <AnimatedGlowCard
           icon={<Database size={24} />}
           title="CRM, Funil e Lead Scoring"
-          description="Estruturação de campos, pipelines, regras de qualificação e distribuição de leads para melhorar priorização comercial e visibilidade do funil."
+          description="Pré-qualificação, segmentação e acompanhamento de leads ao longo da jornada, com informações organizadas para apoiar o time comercial."
         />
         <AnimatedGlowCard
           icon={<Bot size={24} />}
           title="Agentes de IA para Atendimento e Qualificação"
-          description="Implementação de agentes com LLMs para responder, qualificar, classificar intenção de compra e apoiar o time comercial com contexto."
+          description="Criação de agentes no WhatsApp com prompts e lógica conversacional para atender contatos, identificar necessidades e qualificar leads."
         />
         <AnimatedGlowCard
           icon={<Plug size={24} />}
           title="Integrações via APIs, Webhooks e n8n"
-          description="Conexão entre CRM, plataformas digitais, planilhas, sistemas de pagamento e ferramentas de atendimento usando APIs REST e webhooks."
+          description="Integração de WhatsApp API, n8n e CRM por APIs REST e webhooks para manter dados e etapas da jornada conectados."
         />
         <AnimatedGlowCard
           icon={<MessageSquare size={24} />}
           title="WhatsApp Business API e Jornadas Automatizadas"
-          description="Automação de onboarding, pós-compra, recuperação de carrinho, follow-up e atendimento inicial com rastreabilidade no CRM."
+          description="Automação de jornadas de atendimento e relacionamento, do primeiro contato ao acompanhamento do lead, com contexto registrado no CRM."
         />
         <AnimatedGlowCard
           icon={<LineChart size={24} />}
-          title="Dashboards Operacionais e Rastreabilidade"
-          description="Organização de dados, indicadores e relatórios para acompanhar funil, SLA, origem dos leads, status das automações e gargalos da operação."
+          title="Monitoramento e Melhoria Contínua"
+          description="Acompanhamento das automações e análise da operação para identificar retrabalho, ajustar fluxos e melhorar a rastreabilidade dos processos."
         />
       </div>
     </section>

@@ -65,7 +65,7 @@ export function ContactForm() {
           name="message"
           required
           rows={5}
-          placeholder="Conte sobre a operação, CRM, integração ou automação que você quer estruturar..."
+          placeholder="Conte sobre seu processo, atendimento, CRM ou jornada de leads..."
           className="w-full rounded-lg bg-white border border-slate-200 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-[#4f46e5] focus:outline-none focus:ring-1 focus:ring-[#4f46e5] resize-none shadow-sm transition-colors"
         />
       </div>

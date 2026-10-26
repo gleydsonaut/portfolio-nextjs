@@ -27,3 +27,7 @@ yarn-error.log*
 next-env.d.ts
 # Local Netlify folder
 .netlify
+
+# Temporary local demo project used to record the portfolio video
+/MarcFlow/
+.DS_Store

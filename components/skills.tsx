@@ -53,7 +53,7 @@ export function Skills() {
     { name: "CRM, funil, lead scoring e RevOps", percentage: 94 },
     { name: "WhatsApp Business API e chatbots", percentage: 90 },
     { name: "LLMs, agentes de IA e prompt engineering", percentage: 90 },
-    { name: "Kommo CRM, RD Station e integrações de vendas", percentage: 92 },
+    { name: "HubSpot, Pipefy, Pipedrive, Kommo, RD Station e integrações de vendas", percentage: 92 },
     { name: "Power Automate, Make e Zapier", percentage: 88 },
     { name: "Google Sheets, dashboards e dados operacionais", percentage: 86 },
     { name: "JavaScript, Python e scripts de automação", percentage: 85 },

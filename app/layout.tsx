@@ -8,9 +8,9 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Gleydson Rodrigues | Automação, CRM e IA Aplicada',
+  title: 'Gleydson Rodrigues | Analista Pleno de Automação e IA',
   description:
-    'Portfólio de Gleydson Rodrigues, Analista de Automação, CRM e IA Aplicada para operações comerciais, RevOps, Sales Ops e integrações.',
+    'Portfólio de Gleydson Rodrigues, Analista Pleno de Automação e IA. Atuação com n8n, WhatsApp API, agentes de IA, APIs REST, HubSpot, Pipefy, Pipedrive, Kommo e automação de processos.',
   generator: 'v0.app',
 }
 
